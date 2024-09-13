@@ -1,0 +1,33 @@
+*   {
+    color: #2b2b2b;
+}
+
+h1  {
+    text-align: center;
+}
+
+h2  {
+    text-align: center;
+}
+
+header  {
+    background-color: #ff6d00;
+}
+
+body {
+    background-color: #ffb043;
+}
+
+hr  {
+    color: black;
+    height: 4px;
+    solid-opacity: 100%;
+}
+
+
+nav {
+    border: 2px black;
+    width: 1000px;
+    text-align: left;
+    margin: auto;
+}

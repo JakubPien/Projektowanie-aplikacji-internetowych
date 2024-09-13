@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T03 - Porównanie programowania obiektowego i strukturalnego.</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<header>
+    <h1>T03 - Zasady programowania obiektowego i strukturalnego.</h1>
+    <h2>Autor: Jakub Pieniężny</h2>
+    <hr>
+</header>
+
+<section>
+    <h2><b>Programowanie strukturalne</b></h2>
+    <p> Paradygmat programowania zakładający rozdzielenie
+    funkcjonalności programu na moduły (podprogramy).
+    Komunikują się one ze sobą przez określone interfejsy. <br>
+     Jest rozszerzeniem programowania proceduralnego
+    (poprawa przejrzystości i jakości kodu oraz
+    przyśpieszenie tworzenia oprogramowania).</p>
+
+    <hr>
+
+    <h2><b>Założenia programowania strukturalnego</b></h2>
+    <p> Podzielone bloki kodu mają jeden punkt wejścia (mogą
+        mieć wiele punktów wyjścia) <br>
+         Wykonywanie wyrażeń w określonej kolejności <br>
+         Używanie instrukcji warunkowych (if , if else) <br>
+         Używanie pętli (for, while, do while) <br>
+         Unikanie instrukcji skoku (goto) <br>
+         Unikanie instrukcji break, continue</p>
+
+    <hr>
+
+    <h2><b>Programowanie obiektowe</b></h2>
+    <p> Paradygmat programowania zakładający reprezentację
+        problemów w postaci obiektów, przypisanie im działań
+        (metod), które mogą wykonywać oraz umieszczenie pól,
+        które opisują dany obiekt. <br>
+         Jest to podejście bardziej naturalne dla ludzi, bardziej
+        zgodne z rzeczywistością.</p>
+
+    <hr>
+
+    <nav>
+
+    <h2><b>Założenia programowania obiektowego</b></h2>
+    <p> Abstrakcja <br>
+         Hermetyzacja danych (enkapsulacja) <br>
+         Dziedziczenie <br>
+         Polimorfizm</p>
+
+        <hr>
+
+    <h2><b>Abstrakcja</b></h2>
+    <p> Zredukowanie właściwości opisywanego obiektu do
+        najbardziej podstawowych, ograniczenie zakresu
+        funkcjonalności obiektu do kluczowych dla danego
+        zagadnienia działań. <br>
+         Ukrycie funkcjonalności za interfejsem, uogólnienie
+        implementacji. </p>
+
+        <hr>
+
+    <h2><b>Enkapsulacja</b></h2>
+    <p> Inaczej hermetyzacja danych. <br>
+         Dostęp do składowych jest ograniczony za pomocą
+        dobrze określonego interfejsu, czyli obiekt udostępnia
+        tylko pewien zbiór metod, które są widoczne z zewnątrz i
+        mogą być wywoływane. <br>
+         Dostęp do pól obiektu powinien być realizowany poprzez
+        odpowiednie metody(Settery/gettery) a nie przez
+        bezpośredni dostęp do nich. </p>
+
+        <hr>
+
+    <h2><b>Dziedziczenie</b></h2>
+    <p> Mechanizm umożliwiający wywodzenie nowych klas z klas
+        już istniejących, wraz z przejmowaniem ich metod. Dzięki
+        czemu zyskujemy wszystkie już istniejące funkcjonalności,
+        które dodatkowo możemy rozszerzyć lub zmienić.</p>
+
+        <hr>
+
+    <h2><b>Polimorfizm</b></h2>
+    <p> Mechanizm pozwalający na używanie metod itp. na różny
+        sposób, np. przeciążając metodę toString, aby akceptowała
+        zmienne typu int, float, decimal i każdą z nich
+        konwertowała właściwie do ciągu znakowego.</p>
+
+        <hr>
+
+    <h2><b>Różnice</b></h2>
+    <p> W programowaniu strukturalnym mamy podprogramy
+        (funkcje), które odpowiednio ułożone i wywołane tworzą
+        program. <br>
+         Natomiast w p. obiektowym funkcjonalności są
+        przypisane obiektom, zatem trudniej tutaj o pomyłkę np.
+        taką jak przekazanie złej zmiennej do funkcji. </p>
+
+        <hr>
+    </nav>
+
+</section>
+
+
+</body>
+</html>
