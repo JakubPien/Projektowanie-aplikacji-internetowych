@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T08 - Aplikacje internetowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>T08 - Wprowadzenie do Aplikacji internetowych</h1>
+    <h2>Autor: Jakub Pieniężny 2p</h2>
+    <hr size="4px" color="bisque">
+</header>
+
+<section>
+    <h1><b>Aplikacje internetowe</b></h1>
+    <h2><b>Wprowadzenie</b></h2>
+    <p>Aplikacja internetowa to program, który pracuje na serwerze i komunikuje się z użytkownikiem poprzez sieć komputerową z wykorzystaniem przeglądarki internetowej.
+        Przeglądarka internetowa w takim przypadku pełni funkcję interfejsu użytkownika.
+        W aplikacji internetowej zakłada się interakcję z użytkownikiem, korzystanie z baz danych i innych usług, często rozproszonych, umieszczonych na wielu różnych serwerach.
+        Istotnymi cechami aplikacji internetowej są łatwość i szybkość dotarcia do informacji
+        (dowolny komputer podłączony do internetu lub sieci LAN i przeglądarka stron internetowych) oraz bezpieczeństwo danych (login i hasło, szyfrowanie połączenia oraz
+        system uprawnień).
+        Zalety aplikacji internetowych to:</p>
+    <ul>
+        <li> dostępność dla wszystkich zainteresowanych bez ograniczeń związanych z czasem
+            i miejscem,</li>
+        <li> praktycznie brak konieczności instalowania dodatkowego oprogramowania; aby
+            korzystać z aplikacji internetowej, wystarczy przeglądarka internetowa,</li>
+        <li> brak konieczności zakupu dodatkowego sprzętu komputerowego; aplikacja internetowa może zostać zainstalowana na serwerze dostępnym w internecie</li>
+        <li>łatwość utrzymania i modernizacji, ponieważ zmiany i aktualizacje w aplikacji są
+            wykonywane na serwerze bez udziału użytkowników aplikacji,</li>
+        <li>łatwość integracji aplikacji internetowej z innymi usługami, </li>
+        <li>niższe koszty wytworzenia, uruchomienia i utrzymania aplikacji internetowej w porównaniu z innymi rozwiązaniami; większość technologii stosowanych do tworzenia
+            aplikacji internetowych jest bezpłatna.
+        </li>
+    </ul>
+</section>
+<hr size="4px" color="brown">
+<section>
+    <h1><b>Wzorce projektowe</b></h1>
+    <h2><b>Wprowadzenie</b></h2>
+    <p>Wzorce projektowe to sprawdzone w praktyce uniwersalne rozwiązania problemów
+        często pojawiających się podczas projektowania aplikacji. Wzorce projektowe tworzone
+        są najczęściej na bazie programowania obiektowego. Pokazują powiązania i zależności
+        pomiędzy klasami oraz obiektami i ułatwiają tworzenie oraz modyfikację kodu źródłowego. Wprowadzają standaryzację kodu oraz zwiększają jego wydajność i niezawodność.
+        Wzorzec projektowy powinien zawierać oprócz rozwiązania problemu także dokumentację, która wyjaśni cel, sposób działania i zalety danego rozwiązania.
+        Dokumentacja wzorca projektowego powinna obejmować:</p>
+    <ul>
+        <li>unikatową nazwę, która pozwoli odwoływać się do wzorca,</li>
+        <li>opis celu, czyli czym należy się kierować podczas wyboru wzorca,</li>
+        <li> opis sytuacji, w których wzorzec można stosować,</li>
+        <li>graficzną reprezentację wzorca w postaci diagramu klas lub interakcji,</li>
+        <li>listę klas i obiektów stosowanych we wzorcu,</li>
+        <li>opis wzajemnej interakcji klas i obiektów wykorzystywanych we wzorcu,</li>
+        <li>wykaz wyników i efektów ubocznych, jakie występują podczas używania wzorca,</li>
+        <li>wskazówki dotyczące zastosowania wzorca,</li>
+        <li>przykładowy kod w jednym z języków programowania pokazujący zastosowanie
+            wzorca.</li>
+    </ul>
+    <p>Wzorzec projektowy nie jest gotową implementacją rozwiązania. Przypomina szablon, który może być zastosowany w wielu różnych sytuacjach. Wzorce oparte są na
+    praktycznych rozwiązaniach, które zostały zaimplementowane w wybranym języku
+    obiektowym. Mogą przyspieszyć proces projektowania aplikacji przez wykorzystanie
+    wypróbowanych rozwiązań dla sformułowanego problemu.</p>
+</section>
+<hr size="4px" color="brown">
+<section>
+    <h2><b>Wzorzec projektowy MVC</b></h2>
+    <p>MVC (ang. Model-View-Controller) jest jednym z najczęściej stosowanych wzorców
+        projektowych w aplikacjach internetowych. Głównym założeniem tego wzorca jest
+        podzielenie kodu aplikacji na trzy moduły:</p>
+    <ul>
+        <li><i>Model</i> — reprezentuje dane (na przykład pobierane z bazy danych).</li>
+        <li><i>Widok</i> — reprezentuje interfejs użytkownika.</li>
+        <li><i>Kontroler</i> — reprezentuje logikę sterującą aplikacją.</li>
+    </ul>
+</section>
+<hr size="4px" color="brown">
+<section>
+    <h3>Model</h3>
+    <p><b>Model</b> zapewnia zestandaryzowany sposób dostępu do danych. Najczęściej stosowany
+        jest do pobierania i modyfikowania rekordów z bazy danych. Pozostała część aplikacji
+        staje się niezależna od tego, skąd i w jaki sposób dane są pobierane. Dane mogą być
+        pobierane z różnych źródeł (na przykład z bazy lub pliku) i nie jest to istotne pod
+        kątem logiki sterującej aplikacji. Tworząc tę logikę, wywołujemy tylko odpowiednie
+        funkcje modelu i w wyniku dostajemy dane do przetworzenia. Model jest elementem
+        opcjonalnym, gdyż nie zawsze korzystamy z danych pobieranych z bazy czy plików</p>
+</section>
+<hr size="4px" color="brown">
+<section>
+    <h3>Widok</h3>
+    <p><b>Widok</b> reprezentuje to, co będzie widoczne dla użytkownika. Widok oddzielony od
+        logiki aplikacji pozwala na bezproblemową zmianę oprawy graficznej w dowolnym
+        momencie. Zadaniem kontrolera jest przekazanie danych do widoku. Programista
+        tworzący widok nie musi nic wiedzieć na temat logiki programu. Otrzymuje on tylko
+        dane, które należy sformatować. Widok można zmienić, nie ingerując w kod programu.</p>
+</section>
+<hr size="4px" color="brown">
+<section>
+    <h3>Kontroler</h3>
+    <p><b>Kontroler</b>zawiera najważniejszą część kodu, która steruje aplikacją. Odpowiada między
+        innymi za przetwarzanie danych pobranych za pomocą modelu i przekazanie ich poprzez
+        widok użytkownikowi, a także za wykonywanie odpowiednich akcji w zależności od
+        działań użytkownika</p>
+</section>
+<hr size="4px" color="brown">
+<section>
+    <p>Zaletą korzystania ze wzorca MVC jest uzyskanie gotowej struktury aplikacji oraz
+        uporządkowanie struktury kodu szczególnie przy tworzeniu dużych aplikacji. Wzorzec
+        ten pozwala też na uniknięcie problemów ze znalezieniem określonej funkcjonalności.
+        Umożliwia stosowanie jasnego podziału prac nad projektem. Zmiana bazy danych czy
+        wyglądu strony przestaje być problemem.
+        Wzorzec MVC często jest traktowany jako wzorzec złożony, który może być rozbijany na
+        prostsze wzorce. Na bazie wzorca MVC powstało również wiele wzorców pochodnych.
+        Obecnie częściej stosowane są wzorce pochodne niż oryginalny wzorzec.
+        Jedną z pierwszych adaptacji MVC na potrzeby środowiska WWW była platforma Struts
+        przeznaczona dla technologii Java Server Pages.
+        Firma Microsoft wykorzystuje adaptację MVC zbudowaną na bazie technologii ASP.NET
+        w postaci platformy ASP.NET MVC, która umożliwia tworzenie aplikacji z uwzględnieniem wyraźnie odseparowanych modeli, kontrolerów oraz widoków. Platforma ta
+        udostępnia dużą liczbę specyficznych rozszerzeń oraz konstrukcji programistycznych.
+        Istnieje wiele frameworków wspomagających programowanie i udostępniających gotową architekturę opartą na MVC. Należą do nich: Zend Framework, Code Igniter,
+        CakePHP, Symfony.
+    </p>
+</section>
+
+</body>
+</html>
