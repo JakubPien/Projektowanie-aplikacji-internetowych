@@ -27,9 +27,9 @@ btn.addEventListener("click", function() {
         <li>${e}</li>
         </ul>
         
-        Suma liczb: ${a} + ${b} + ${c} + ${d} + ${e} = ${suma}
-        Iloczyn liczb: ${a} * ${b} * ${c} * ${d} * ${e} = ${iloczyn}
-        Średnia liczb = ${srednia}
+        Suma liczb: ${a} + ${b} + ${c} + ${d} + ${e} = ${suma} <br>
+        Iloczyn liczb: ${a} * ${b} * ${c} * ${d} * ${e} = ${iloczyn} <br>
+        Średnia liczb = ${srednia} <br>
         `
 
 
