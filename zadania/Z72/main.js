@@ -1,13 +1,9 @@
-const num = document.querySelector("#num")
-const btn = document.querySelector("button")
+let x = parseInt(prompt("Podaj x"))
 
-btn.addEventListener("click", function() {
-    let x = parseInt(num.value)
-
-    if (x > 100)
+    if (x > 100) {
         x = 100
+    }
 
     for (let i = 1; i <= x; i++) {
-        document.writeln(`${i}; `)
+        document.write(`${i}; `)
     }
-})
