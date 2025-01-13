@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T25a</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Zadanie T25a</h1>
+  <h2>Autor: Jakub Pieniężny 2P</h2>
+</header>
+
+<section>
+<script>
+  let osoba = {
+    nazwisko: "Jakub",
+    imie: "Pieniężny",
+    zawod: "programista",
+    wiek: "16 lat",
+
+  pokaz: function() {
+    document.write(this.nazwisko + ' ' + this.imie + '</br>' + this.zawod + '</br>' + this.wiek);
+        }
+  };
+  osoba.pokaz();
+
+  let samochod = {
+    marka: "Ford",
+    model: "Focus MK2",
+    il_pas: "5",
+    poj_sil: "1.6",
+
+    wyswietl: function () {
+      document.write( '</br></br>' +this.marka + ' ' + this.model + '</br>' + 'ilość pasażerów: ' + this.il_pas + ' pojemność silnika: ' + this.poj_sil)
+    }
+  };
+  samochod.wyswietl()
+</script>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T25b klient i jego zwierzak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Zadanie T25 klient i jego zwierzak</h1>
+    <h2>Autor: Jakub Pieniężny 2P</h2>
+</header>
+
+<section>
+    <script>
+        function Klient(nazwisko_k, imie_k, zawod_k) {
+                this.nazwisko = nazwisko_k;
+        this.imie = imie_k;
+        this.zawod = zawod_k;
+        this.wypisz = function() {
+            document.write(this.nazwisko + ' ' + this.imie + '</br>');
+            };
+            this.info = function () {
+            document.write(`Mam na imię ${this.imie}. Nazywam się ${this.nazwisko}. Mój zawód to ${this.zawod}.</br>`)
+            }
+        }
+
+
+        let pan_Jacek = new Klient("Poniedziałek","Jacek","nauczyciel")
+
+        pan_Jacek.wypisz()
+        pan_Jacek.info()
+        let pani_Ania = new Klient("Dysma","Anna","aktorka")
+        pani_Ania.info()
+
+
+        function Zwierzak(gatunek_z, imie_z, wiek_z, wlasciciel_z) {
+            this.gatunek = gatunek_z;
+            this.imie = imie_z;
+            this.wiek = wiek_z;
+            this.wlasciciel = wlasciciel_z
+            this.info = function () {
+                document.write(`Jestem zwierzakiem. Moje dane to: </br> gatunek: ${this.gatunek} </br> imie: ${this.imie} </br> wiek: ${this.wiek} </br> `)
+            }
+            this.podajWlasciciela = function () {
+                document.write("Mój włascicel to:</br>");
+                this.wlasciciel.wypisz();
+            }
+        }
+
+        let reksio = new Zwierzak('pies', 'Reksio', 2, pani_Ania)
+        reksio.info();
+        reksio.podajWlasciciela();
+
+    </script>
+</section>
+
+
+</body>
+</html>
