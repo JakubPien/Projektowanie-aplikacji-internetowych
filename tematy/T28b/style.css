@@ -1,0 +1,33 @@
+body {
+    background-color: antiquewhite;
+    color: brown;
+    font-family: "Arial";
+    font-size: 19px;
+}
+
+header {
+    background-color: brown;
+    color: bisque;
+    padding: 20px;
+}
+
+section {
+    background-color: antiquewhite;
+    border : brown 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#tabelaTutaj, #analizaPrzekatnych {
+    font-size: 1.8rem;
+    padding: 20px;
+}
+table {
+    width: 20%;
+}
+
+table td {
+    border: #5db0b0 solid 1px;
+    text-align: center;
+}
