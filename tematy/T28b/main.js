@@ -1,21 +1,20 @@
-function daysUntilBirthday(birthday) {
-    const today = new Date();
-    const nextBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());
+const btn = document.querySelector('button');
+const wynik = document.querySelector('#wynik');
 
-    // Jeśli urodziny już były w tym roku, obliczamy datę na następny rok
-    if (nextBirthday < today) {
-        nextBirthday.setFullYear(today.getFullYear() + 1);
-    }
+btn.addEventListener('click', () => {
+    const urodziny = document.querySelector('#urodziny').value;
 
-    // Obliczamy różnicę w milisekundach
-    const differenceInMillis = nextBirthday - today;
+    let info;
 
-    // Przekształcamy różnicę w dni
-    const daysUntil = Math.ceil(differenceInMillis / (1000 * 60 * 60 * 24));
+    const urodz = new Date(urodziny);
+    const dzisiaj = new Date();
 
-    return daysUntil;
-}
+    const jescze = Math.ceil((urodz - dzisiaj) / (1000 * 3600 * 24));
 
-// Przykład użycia
-const myBirthday = new Date('YYYY-MM-DD'); // Wprowadź datę swoich urodzin
-console.log(`Do moich urodzin pozostało ${daysUntilBirthday(myBirthday)} dni.`);
+    if (urodz > dzisiaj) info = `Masz urodziny za ${jescze} dni`;
+    else if (urodz.getFullYear() !== dzisiaj.getFullYear()) info = `Ten rok już był`;
+    else if (jescze < 0) info = `Twoje urodziny już były w tym roku, ${-jescze} dni temu`;
+    else info = "Wszystkiego Najlepszego!🎉"
+
+    wynik.innerHTML = info;
+})

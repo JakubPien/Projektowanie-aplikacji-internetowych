@@ -18,16 +18,3 @@ section {
     padding: 10px;
     margin-top: 5px;
 }
-
-#tabelaTutaj, #analizaPrzekatnych {
-    font-size: 1.8rem;
-    padding: 20px;
-}
-table {
-    width: 20%;
-}
-
-table td {
-    border: #5db0b0 solid 1px;
-    text-align: center;
-}

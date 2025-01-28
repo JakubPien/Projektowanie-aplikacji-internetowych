@@ -31,7 +31,7 @@ btn.addEventListener('click', function () {
             nazwa = "niewłaściwa liczba"
     }
 
-    wynik.innerText =
+    wynik.innerHTML =
         `
         Podana liczba to: ${x} <br>
         Nazwa oceny: ${nazwa}
