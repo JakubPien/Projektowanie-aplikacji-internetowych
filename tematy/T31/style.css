@@ -1,0 +1,31 @@
+body {
+    background-color: antiquewhite;
+    color: brown;
+    font-family: "Arial";
+    font-size: 19px;
+}
+
+header {
+    background-color: brown;
+    color: bisque;
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(brown, red);
+    border : brown 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+}
+
+div {
+    margin: 50px;
+    padding-top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}

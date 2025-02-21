@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 32 obsługa formularza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Zadanie 32 obsługa formularza</h1>
+  <h2>Autor: Jakub Pieniężny 2p</h2>
+  <hr>
+</header>
+
+<section>
+  <p>Zadanie polega na stworzeniu aplikacji JavaScript według wzoru pokazanego na grafice. Zwróć uwagę, że nagłówek h1 "Ustalenie wartości za pomocą suwaka" - zmienia kolor na taki, jaki został wybrany przez użytkownika w polu "Ocena kolorem". Również łańcuch znaków "ocena kolorem", powinien być zapisany w wybranym kolorze.</p>
+  <label for="ocenaKlienta">Poziom zadowolenia obsługą w skali od 0 do 15</label><input type="range" id="ocenaKlienta" value="1" min="0" max="15">
+  <br>
+  <label for="date">Data wykonania usługi: </label> <input type="date" id="date">
+  <br>
+  <label for="ocenaKolorem">Ocena kolorem: </label> <input type="color" id="ocenaKolorem">
+  <br>
+  <button>Działaj</button>
+</section>
+
+<section>
+  <p id="wynik">..</p>
+  <script src="main.js"></script>
+</section>
+</body>
+</html>
