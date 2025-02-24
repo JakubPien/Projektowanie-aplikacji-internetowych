@@ -1,23 +1,20 @@
 const ocenaKlienta = document.querySelector("#ocenaKlienta");
 const ocenaKolorem = document.querySelector("#ocenaKolorem");
-const date = document.querySelector("#data");
+const date = document.querySelector("#date");
 const btn = document.querySelector("button");
-let tekst = "ocena kolorem";
+const wynik = document.querySelector("#wynik");
+const ocenaKoloremSpan = document.querySelector("#ocenaKoloremSpan");
 
 btn.addEventListener("click", function () {
     let ocena = ocenaKlienta.value
+    let data = date.value
 
-
+    ocenaKoloremSpan.style.color = ocenaKolorem.value;
 
     wynik.innerHTML =
         `
-        Usługę wykonano: ${date} <br>
+        Usługę wykonano: ${data} <br>
         Ocena Klienta: ${ocena} <br>
-        Ocena Kolorem: ${tekst} <br>
+        Ocena Kolorem: <span style="color:${ocenaKolorem.value}">ocena kolorem</span> <br>
         `
 });
-ocenaKolorem.addEventListener("input", function () {
-    const kolor = ocenaKolorem.value;
-   tekst.style.color = kolor;
-wynik.style.color = kolor;
-})
