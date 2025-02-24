@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 32c - zaprojektuj własne trampki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Zadanie 32c - zaprojektuj własne trampki</h1>
+<h2>Autor: Jakub Pieniężny 2p</h2>
+  <hr>
+</header>
+
+<hr>
+
+  <section>
+
+
+
+    <fieldset>
+      <legend>Podstawowe dane</legend>
+
+      <ul>
+        <li><label for="form-name">Imię i nazwisko:</label> <input type="text" name="username" id="form-name"></li>
+        <li><label for="form-email">Adres email:</label> <input type="email" name="emailaddress" id="form-email"></li>
+        <li><label for="form-tel">Telefon:</label> <input type="tel" name="telephone" id="form-tel"></li>
+        <li><label for="form-story">Moje buty są tak stare...</label><br><textarea name="story" rows="4" cols="60" maxlength="300" id="form-story" placeholder="Nie więcej jak 300 znaków"></textarea></li>
+      </ul>
+    </fieldset>
+
+    <h2>Zaprojektuj własne trampki:</h2>
+
+    <fieldset>
+      <legend>Własny projekt butów</legend>
+      <fieldset>
+        <legend>Kolor <em> (wybierz jeden)</em>:</legend>
+        <ul>
+          <li><label><input type="radio" name="color" value="Czerwony">czerwony</label></li>
+          <li><label><input type="radio" name="color" value="Niebieski">niebieski</label></li>
+          <li><label><input type="radio" name="color" value="Czarny">czarny</label></li>
+          <li><label><input type="radio" name="color" value="Srebny">srebny</label></li>
+          <li><label><input type="radio" name="color" value="Zielony">zielony</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Opcje <em>(możesz wybrać kilka)</em></legend>
+        <ul>
+          <li><input type="checkbox" name="features[]" value="true" id="chek_laces">Błyszczące sznórówki</li>
+          <li><input type="checkbox" name="features[]" value="true" id="chek_logo">Metalowe logo</li>
+          <li><input type="checkbox" name="features[]" value="true" id="chek_heels">Świecąca podeszwa</li>
+          <li><input type="checkbox" name="features[]" value="true" id="chek_mp3">Odtwarzacz MP3</li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Rozmiar</legend>
+        <p>Rozmiar zgodny z standardowymi numerami butów: <select name="size" size="1" id="size">
+          <option value="1">37</option>
+          <option value="2">38</option>
+          <option value="3">39</option>
+          <option value="4">40</option>
+          <option value="5">41</option>
+          <option value="6">42</option>
+          <option value="7">43</option>
+          <option value="8">44</option>
+          <option value="9">45</option>
+          <option value="10">46</option>
+          <option value="11">47</option>
+          <option value="12">48</option>
+          <option value="13">49</option>
+          <option value="14">50</option>
+          <option value="15">51</option>
+        </select>
+        </p>
+      </fieldset>
+
+    </fieldset>
+
+      <button>Podrasuj swoje buty!</button>
+      <button type="reset">Reset</button>
+
+
+</section>
+
+<section>
+  <p id="wynik"></p>
+  <script src="main.js"></script>
+</section>
+</body>
+</html>
