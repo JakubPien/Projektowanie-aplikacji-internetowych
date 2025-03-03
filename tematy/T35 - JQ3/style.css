@@ -1,0 +1,62 @@
+body {
+    border: 2px black solid;
+    background-color: antiquewhite;
+    color: brown;
+    text-align: center;
+    width: 1400px;
+    height: 700px;
+}
+
+
+section {
+    background: linear-gradient(brown, red);
+    border : brown 1px solid;
+    border-radius: 5px;
+    color: white;
+}
+
+div {
+    color: black;
+}
+
+.menu {
+    background-color: bisque;
+    width: 420px;
+    height: 120px;
+    float: left;
+    text-align: left;
+}
+
+.tytul {
+    background-color: brown;
+    width: 980px;
+    height: 120px;
+    float: left;
+    color: orange;
+}
+
+.zawartosc {
+    background-color: white;
+    width: 1190px;
+    height: 560px;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+}
+
+img {
+    width: 210px;
+    height: 560px;
+    float: left;
+}
+
+#stopka{
+    height: 20px;
+    width: 1400px;
+    color: black;
+    text-align: left;
+}
+
+#stopka h5{
+    background-color: darkslategray;
+}
