@@ -1,0 +1,51 @@
+body {
+    font-family: Georgia;
+}
+
+#blok_lewy {
+    background-color: Maroon;
+    color: White;
+    height: 600px;
+    width: 30%;
+    float: left;
+}
+
+#blok_prawy {
+    background-color: Maroon;
+    color: White;
+    height: 600px;
+    width: 70%;
+    overflow-y: auto;
+    float: left;
+}
+
+footer {
+    background-color: DimGray;
+    color: White;
+}
+
+#blok_prawy img, #blok_prawy #lista {
+    float: left;
+}
+
+#blok_prawy #tekst {
+    float: right;
+}
+
+img {
+    border: 2px white solid;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#indiago {
+    background-color: Indigo;
+}
+
+#olive {
+    background-color: Olive;
+}
+
+#steelblue {
+    background-color: Steelblue;
+}
