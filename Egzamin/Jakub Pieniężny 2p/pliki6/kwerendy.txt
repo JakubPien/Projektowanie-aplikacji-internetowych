@@ -1,0 +1,4 @@
+kw1 = INSERT INTO `klienci` (nazwisko, imie, pesel, haslo) VALUES ("Adamowicz", "Agnieszka", "", "haslo4");
+kw2 = SELECT AVG(`rocznik`) FROM `samochody`;
+kw3 = SELECT samochody.marka, klienci.imie FROM samochody JOIN wypozyczenia ON samochody.id = wypozyczenia.samochody_id JOIN klienci ON wypozyczenia.klienci_id = klienci.id;
+kw4 = ALTER TABLE `klasa` DROP COLUMN `cena`;
