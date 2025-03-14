@@ -1,0 +1,38 @@
+container {
+    font-family: sans-serif;
+    background-color: Linen;
+    color: #222;
+    margin: auto;
+    width: 90%;
+}
+
+#baner_1 {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+
+#baner_2 {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+
+#blok_glowny {
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: #aaa;
+
+}
