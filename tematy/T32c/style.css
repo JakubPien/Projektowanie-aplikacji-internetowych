@@ -11,7 +11,7 @@ header {
 }
 
 section {
-    background: linear-gradient(brown, red);
+    background: linear-gradient(yellow, black);
     border : brown 1px solid;
     border-radius: 5px;
     padding: 10px;
