@@ -2,20 +2,19 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pogotowie komputerowe</title>
   <link rel="stylesheet" href="styl.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <script>
     function wyswietlDane() {
-      var imie = document.querySelector("input[name='imie']").value;
-      var nazwisko = document.querySelector("input[name='nazwisko']").value;
-      var email = document.querySelector("input[name='email']").value.toLowerCase();
+      var imie = document.querySelector("#imie").value;
+      var nazwisko = document.querySelector("#nazwisko").value;
+      var email = document.querySelector("#select[name='email']").value.toLowerCase();
       var usluga = document.querySelector("select[name='usluga']").value;
 
-      var wynik = "<p>" + imie + " " + nazwisko + "</p>";
-      wynik += "<p>" + email + "</p>";
-      wynik += "<p>Usługa: " + usluga + "</p>";
+      var wynik = imie + " " + nazwisko;
+      wynik += email ;
+      wynik += "Usługa: " + usluga;
 
       document.getElementById("wynik").innerHTML = wynik;
     }
@@ -45,27 +44,32 @@
         </tr>
         <tr>
           <td>Nazwisko:</td>
-          <td><input type="text" name="nazwisko"></td>
+          <td><label>
+            <input type="text" name="nazwisko">
+          </label></td>
         </tr>
         <tr>
           <td>E-mail:</td>
-          <td><input type="email" name="email"></td>
+          <td>
+            <input type="email" name="email"></td>
         </tr>
         <tr>
           <td>Usługa:</td>
           <td>
-            <select name="usluga">
-              <option>Naprawa komputera</option>
-              <option>Odzyskiwanie danych</option>
-              <option>Problemy z oprogramowaniem</option>
-              <option>Konfiguracja sieci LAN</option>
-              <option>Inne</option>
-            </select>
+            <label>
+              <select name="usluga">
+                <option>Naprawa komputera</option>
+                <option>Odzyskiwanie danych</option>
+                <option>Problemy z oprogramowaniem</option>
+                <option>Konfiguracja sieci LAN</option>
+                <option>Inne</option>
+              </select>
+            </label>
           </td>
         </tr>
         <tr>
-          <td colspan="2">
-            <input type="checkbox" name="kopiamail" checked> Wyślij kopię wiadomości
+          <td colspan="4">
+            <input type="checkbox" id="kopiamail" checked> <label for="kopiamail">Wyślij kopię wiadomości</label>
           </td>
         </tr>
         <tr>
@@ -79,9 +83,9 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <section class="footer">
     <p>Autor strony: <strong>Jakub Pieniężny 2p</strong></p>
-  </footer>
+  </section>
 </div>
 </body>
 </html>

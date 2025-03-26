@@ -1,11 +1,10 @@
 body {
     background-color: #99FFCC;
-    font-family: Arial, sans-serif;
 }
 
 .container {
     width: 1000px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .banner {
@@ -16,12 +15,12 @@ body {
 .menu {
     background-color: #66CCFF;
     text-align: center;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .menu a {
     color: #006666;
-    margin: 0 50px;
+    margin: 50px;
     font-size: 200%;
     text-decoration: none;
 }
@@ -56,9 +55,10 @@ td {
 }
 
 input, select {
-    width: 100%;
-    padding: 5px;
-}
+     width: 100%;
+     padding: 5px;
+ }
+
 
 button[type="reset"] {
     background-color: #FF0000;
